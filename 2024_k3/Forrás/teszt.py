@@ -1,0 +1,1 @@
+print("Hello Pataky!\n"*10)

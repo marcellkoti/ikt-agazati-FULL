@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</head>
+
+<body onload="keprejt();">
+  <header>
+    <div class="container" id="fejleckepek">
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="kepek/fej1.jpg" alt="Pihenők" title="Pihenők">
+          </div>
+          <div class="carousel-item">
+            <img src="kepek/fej2.jpg" alt="Vizisétány" title="Vizisétány">
+          </div>
+        </div>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <h1 class="d-none d-md-block">A Balaton</h1>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-sm sticky-top">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link">Földrajz</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Turizmus</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Növényvilág</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">Állatvilág</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <div class="container" id="foldrajz">
+      <div class="row">
+        <div class="col-lg-6">
+          <h2 class="display-5">A Balaton földrajza</h2>
+          A Balaton a Dunántúl közepén terül el, északon a Balaton-felvidék, nyugaton és délen a Zalai- és a Somogyi-dombság, keleten pedig a Mezőföld határolja.
+
+          A Balaton Magyarország legnagyobb tava, Európa-hírű természeti kincsünk. Legnagyobb mélysége Tihanynál 11-12,5 m, átlagos mélysége 3–4 m. A déli parton sekélyebb a víz, ezért nyáron hamar felmelegszik, fürdőzésre kiválóan alkalmas. Északi partján a Bakony déli előterét alkotó Balaton-felvidék szőlőkkel, erdőkkel borított hegyei emelkednek.
+
+          A Balaton-felvidék napsütötte lejtőin sok szőlőt és gyümölcsöt termesztenek. Nyáron a kellemes időjárás, az északnyugati szelek által terelgetett vitorlások, a harmonikus szépségű táj megnyugtató hatással van a pihenő emberekre. A legmagasabb vízállás (113,3 méter) a tatárjárás idején, valamint a török hódoltság korában volt.
+
+          <p>A Balaton 18. század végi középvízszintje Adriai alapszint feletti magasságban 106,5 méter körül alakult. A tó vízszintjének mesterséges szabályozása 1847-ben a Kiliti malom gátjának elbontásával kezdődött és a <abbr title="A Balaton vizét vezeti le a Dunába.">Sió-zsilip</abbr> 1863-as ünnepélyes megnyitásával teljesült ki.</p>
+          <figure id="domborzat">
+            <img src="kepek/balaton-domborzat.png" alt="A Balaton domborzata" title="A Balaton domborzata">
+          </figure>
+        </div>
+        <div class="col-lg-6">
+          <table class="table table-hover szamok">
+            <thead>
+              <tr>
+                <th colspan="2">A Balaton számokban</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tengerszint feletti magasság</td>
+                <td>104 méter</td>
+              </tr>
+              <tr>
+                <td>Hosszúság</td>
+                <td>77 km</td>
+              </tr>
+              <tr>
+                <td>Szélesség</td>
+                <td>1,3-14 km</td>
+              </tr>
+              <tr>
+                <td>Felszíni terület</td>
+                <td>600 km<sup>2</sup></td>
+              </tr>
+              <tr>
+                <td>Átlagos mélység</td>
+                <td>3,0-3,6 méter</td>
+              </tr>
+              <tr>
+                <td>Legnagyobb mélység</td>
+                <td>11 méter</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div id="turizmus">
+        <h2 class="display-5">A Balaton turisztikai vonzereje</h2>
+        <div class="row">
+          <div class="col-lg-3">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th>Turisztikai célpontok</th>
+                </tr>
+              </thead>
+              <tbody class="turizm keplink">
+                <tr>
+                  <td onclick="turizmus('keszthely');" onmouseleave="keprejt();">Keszthely</td>
+                </tr>
+                <tr>
+                  <td onclick="turizmus('tihany');" onmouseleave="keprejt();">Tihany</td>
+                </tr>
+                <tr>
+                  <td onclick="turizmus('badacsony');" onmouseleave="keprejt();">Badacsony</td>
+                </tr>
+                <tr>
+                  <td onclick="turizmus('szigliget');" onmouseleave="keprejt();">Szigliget</td>
+                </tr>
+                <tr>
+                  <td onclick="turizmus('siofok');" onmouseleave="keprejt();">Siófok</td>
+                </tr>
+                <tr>
+                  <td onclick="turizmus('folly');" onmouseleave="keprejt();">Folly Arborétum</td>
+                </tr>
+                <tr>
+                  <td onclick="turizmus('kekszalag');" onmouseleave="keprejt();">Kékszalag Vitorlásverseny</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-lg-9">
+            <div id="turizmusszovegkeret">
+              <p>A Balaton és környéke Budapest mellett az ország turisztikailag leglátogatottabb területe, 2004-ben elnyerte az Örökségünk – Somogyország Kincse címet is. Környékén gyógyfürdők, termálforrások találhatók. A „Balaton fővárosa” címet hivatalosan <a href="https://keszthely.hu/">Keszthely</a> viseli, de <a href="https://siofok.hu">Siófok</a> a déli part, <a href="https://balatonfured.hu">Balatonfüred</a> pedig az északi part fővárosaként tekint magára. A tó környékét a közigazgatási széttagoltság jellemzi, mert három megyéhez, három tervezési-statisztikai régióhoz tartozik.</p>
+              <p>Minden évben megrendezik a tóhoz kapcsolódó három nagy tömegsporteseményt: a tókerülő Kékszalag Nemzetközi Vitorlásversenyt, a Révfülöp–Boglár közötti, a Balatont keresztben átszelő távúszóversenyt, legújabban pedig a Fonyód-Badacsony-Fonyód útvonalon bármilyen kézi hajtású vízi járművel, illetve a <a href="https://zamardi.hu">Zamárdi</a> és <a href="https://tihan.hu">Tihany</a> között oda-vissza 8 km távon a Balaton-átevezést.</p>
+              <figure id="panorama">
+                <img src="kepek/panorama.jpg" alt="Tihanyi panoráma" title="Tihanyi panoráma">
+                <figcaption>Tihanyi panoráma az apátsági Rege cukrászda teraszáról</figcaption>
+              </figure>
+            </div>
+            <div id="turizmuskepkeret">
+              <img id="turizmuskep" src="" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" id="novenyvilag">
+        <h2 class="display-5">A Balaton növényvilága</h2>
+        <p>A hínárféléket a balatoni strandokon is megtaláljuk közülük gyakoribbak a süllőhínár-fajok Füzéres süllőhínár (Myriophyllum) és a békaszőlő-fajok (Potamogeton). Az elsősorban a közönséges nád (Phragmithes australis) által alkotott nádasok a part mentén, leginkább az északi parton maradtak fenn. Társulásalkotó növénye elsősorban a keskenylevelű gyékény (Typha angustifolia) és többek között a tavi káka (Schoenoplectus lacustris), valamint a zsombéksás (Carex elata). A nádasokat és állatvilágukat a települések, elsősorban az idegenforgalmi létesítmények, strandok bővítése, horgászállások, kikötők építése veszélyezteti.</p>
+        <p>A tó környékének rendkívül gazdag növényvilágára jellemző, hogy a molyhos és cseres tölgyes erdőségek a legelterjedtebbek, amelyeket sok helyütt telepített fenyőerdők váltanak. Különleges fenyőféléket tekinthet meg az érdeklődő a Folly Arborétumban Badacsonyörsön. A Balaton-felvidéki Nemzeti Park címernövénye, a Balaton-felvidék néhány láprétjén nyíló lisztes kankalin (Primula farinosa) mellett több más pompás szirmú virág is honos itt, ilyen a tavaszi hérics, a fekete kökörcsin és a citromillatú nagyezerjófű.</p>
+        <div class="col-lg-4 py-3">
+          <figure>
+            <img src="kepek/tavi.jpg" alt="Tavi káka" title="Tavi káka">
+            <figcaption>Tavi káka</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4 py-3">
+          <figure>
+            <img src="kepek/kankalin.jpg" alt="Lisztes kankalin" title="Lisztes kankalin">
+            <figcaption>Lisztes kankalin</figcaption>
+          </figure>
+        </div>
+        <div class="col-lg-4 py-3">
+          <figure>
+            <img src="kepek/nagyezerjofu.jpg" alt="Nagyezerjófű" title="Nagyezerjófű">
+            <figcaption>Nagyezerjófű</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div id="allatvilag">
+        <h2 class="display-5">A Balaton állatvilága</h2>
+        <p>A tó Európa egyik legjelentősebb vízimadár-élőhelye. Kiterjedt nádasai számos madárfaj számára nyújtanak fészkelő helyet. Bár a vadon élő fajok többnyire kerülik az embert és az emberi tevékenységekkel járó zavarást, néhány olyan is akad, amelyik alkalmazkodni tud ehhez, illetve kihasználja.A legismertebb madár, a Balaton legnagyobb röpképes madara, a bütykös hattyú (Cygnus olor), amely a nádasban építi nagy méretű úszó fészkét, fészekhagyó fiókáit azonban kikelésük után gyakran a strandok közelében neveli fel, ahol könnyen jut hozzá a táplálékhoz, mivel a nyaralók rendszeresen etetik őket. Egy 2014-es áprilisi felmérés során 46 fészkelő párt észleltek a tavon, amelyeknek 72%-a az északi parton tartózkodott. A tavon tartósan mintegy 500 egyed tartózkodik. Hasonló viselkedést figyelhetünk meg a mindenütt gyakori tőkés réce (Anas platyrhynchos) esetében is, amelyek a hattyúkkal együtt gyakran keresik az ember társaságát. A Magyar Madártani és Természetvédelmi Egyesület hagyományosan évente szervezi a „Balatoni hattyú road show”-t, ahol az érdeklődők testközelből is megismerkedhetnek a látványos hattyúgyűrűzéssel és a Balaton egyik emblematikussá vált madarával.</p>
+        <p>A Balaton, lévén hazánk legnagyobb állóvize, halfaunája nagyon értékes. Az érdeklődők a legrészletesebben a Balatoni Vízivilág Látogatóközpontban tájékozódhatnak a vidék halaival. A tóban, a vele összefüggő Kis-Balatonban és a vízgyűjtő területén található 40 vízfolyásban 37 halfaj fordul elő, ebből a Balatonban 15-17 faj él meg. Az itt élő halak 80%-át a keszegfélék alkotják. Ezek közül a leggyakoribb a dévérkeszeg, a karikakeszeg, a bodorka és a vörösszárnyú keszeg.</p>
+        <div class="row">
+          <div class="col-lg-6 py-3">
+            <div class="media border p-3">
+              <img src="kepek/bodorka.png" alt="Bodorka" title="Bodorka" class="mr-3 mt-3 allatkep">
+              <div class="media-body">
+                <p class="nev">Bodorka <span class="latin">(Rutilus rutilus)</span></p>
+                <p>Minden vizünkben él, szereti a csendesen folyó és állóvízű helyeket, nyáron főként a hínáros részeket keresi. Egész Európára jellemző faj, a déli félszigeteket kivéve. A kutatók tapasztalatai szerint a Balaton vízgyűjtő területén legáltalánosabban előforduló halfaj a bodorka vagy búzaszemű keszeg (Rutilus rutilus) , az összes halfogás 32,15%-a. Táplálékkal bőven ellátott vizekben nem ritkák 25 cm-es példányok sem. A táplálékbő vizekben, magasabb, szélesebb hátú, ún. állóvízi változata él, szemben a „folyóvízi” nyúlánkabb egyedekkel. Rovarlárvát, aprócsigát, planktonrákokat, hínárhajtásokat fogyaszt.</p>
+              </div>
+            </div>
+
+            <div class="media border p-3">
+              <img src="kepek/garda.png" alt="Garda" title="Garda" class="mr-3 mt-3 allatkep">
+              <div class="media-body">
+                <p class="nev">Garda <span class="latin">(Pelecus cultratus)</span></p>
+                <p>A garda álló és lassú folyású vizek lakója; szívesen tanyázik brakkvízben is. Közép-Európától a Kaszpi-tengerig megtalálható; az Aral-tóban is van állománya. Magyarországon a nagyobb folyókban és a Balatonban él, ahol régebben akár 50-300 tonnát is fogtak évente. Tihanyban a 2000-es évek eleje óta évről évre megrendezik a „Tihanyi Gardália” fesztivált, hagyományőrző és gasztronómiai rendezvényként. Rajhal, amely napközben a fenék közelében tartózkodik, éjszaka a felszínre emelkedik. Tápláléka planktonrákok, rovarlárvák és -bábok, repülő rovarok és apró halak. Legfeljebb 11 évig él.</p>
+              </div>
+            </div>
+
+            <div class="media border p-3">
+              <img src="kepek/fogassullo.png" alt="Fogassüllő" title="Fogassüllő" class="mr-3 mt-3 allatkep">
+              <div class="media-body">
+                <p class="nev">Fogassüllő <span class="latin">(Sander lucioperca)</span></p>
+                <p>A másfél kilósnál nagyobb példányok népies neve fogas, az ennél kisebbeké süllő. A névváltozat a fogasméretűre fejlődött süllő szájában lévő kapófogai miatt van. A süllő Európában honos, megtalálható a Brit-szigetektől egészen Oroszország középső részéig. Magyarországon a nagyobb folyókban és tavakban is előfordul ez a kiváló sporthal, mely a halász- és horgászzsákmányt érintően is jelentős. Gazdaságilag fontos faj, a magyar konyha nevezetes halétele és a balatoni süllőnek köszönhetően népszerűsége töretlen. Oxigénigényes hal, ezért a folyó vizekben elsősorban a kavargó és örvénylő részeken fordul elő. A mederben nagyobb kő vagy tuskó mellett szívesen tanyázik, szereti a búvóhelyeket, ahol csoportosan előfordulhat (süllő tanya). Magyarországon a legértékesebb és legkeresettebb halak egyike. Részesedése a halász- és horgászzsákmányban egyaránt jelentős, tehát a süllőállomány gazdasági szempontból is igen komoly értéket képvisel.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 py-3">
+            <div class="media border p-3">
+              <img src="kepek/hattyu.png" alt="Bütykös hattyú" title="Bütykös hattyú" class="mr-3 mt-3 allatkep">
+              <div class="media-body">
+                <p class="nev">Bütykös hattyú <span class="latin">(Cygnus olor)</span></p>
+                <p>A legismertebb madár, a Balaton legnagyobb röpképes madara, a bütykös hattyú (Cygnus olor), amely a nádasban építi nagy méretű úszó fészkét, fészekhagyó fiókáit azonban kikelésük után gyakran a strandok közelében neveli fel, ahol könnyen jut hozzá a táplálékhoz, mivel a nyaralók rendszeresen etetik őket. Egy 2014-es áprilisi felmérés során 46 fészkelő párt észleltek a tavon, amelyeknek 72%-a az északi parton tartózkodott. A tavon tartósan mintegy 500 egyed tartózkodik. Természetétől fogva vándormadár, télen 1000 km-nél többet is megtehet, hogy Európa enyhébb területein teleljen. A parkokba betelepített példányai gyakran a nagyvárosok be nem fagyott vizein maradnak, ahol mindig eteti őket valaki. Hosszas, csapkodó vízfelszíni nekifutással emelkedik fel, de ha már a levegőben van, kitartóan repül.</p>
+              </div>
+            </div>
+
+            <div class="media border p-3">
+              <img src="kepek/vadkacsa.png" alt="Tőkés réce" title="Tőkés réce" class="mr-3 mt-3 allatkep">
+              <div class="media-body">
+                <p class="nev">Tőkés réce vagy vadkacsa <span class="latin">(Anas platyrhynchos)</span></p>
+                <p>Testhossza 50–65 centiméter, szárnyfesztávolsága 81–98 centiméter, testtömege 750–1450 gramm. A tojó mintegy negyedével kisebb és könnyebb, mint a hím (gácsér). Tápláléka változatos, főleg magvakat, növényi részeket, gerincteleneket, apró halakat és ebihalakat fogyaszt. Az állomány egy része áttelel, másik része vonuló. Vadászható vízivad. A legidősebb ismert tőkés réce 29 évet élt. Magyarországon vadászható. Vadászati idénye augusztus 15–től január 31-ig tart. Fekete István ifjúsági regényében a Vukban a vadkacsa neve Tás. </p>
+              </div>
+            </div>
+
+            <div class="media border p-3">
+              <img src="kepek/nadirigo.png" alt="Nádirigó" title="Nádirigó" class="mr-3 mt-3 allatkep">
+              <div class="media-body">
+                <p class="nev">Nádirigó <span class="latin">(Acrocephalus arundinaceus)</span></p>
+                <p>Európában és Ázsia nyugati részén honos. Nádasok lakója. Hosszútávú vonuló, a trópusi Afrikában telel. Testhossza 19–20 centiméter, szárnyfesztávolsága 24–29 centiméter, testtömege pedig 24–40 gramm. Csőre erőteljes, szemsávja fehér, tollazatára a sárgásbarna szín a jellemző. Rovarokkal, pókokkal, békák ebihalaival és bogyókkal táplálkozik. Nádszálak közé építi mély, csésze alakú fészkét. Fészekalja 4-5 foltos tojásból áll, melyeken 14-15 napig kotlik. A fiókák 11-12 nap múlva hagyják el a fészket. Gyakran a fészekparazita kakukk felnevelője.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    Ugrás az elejére
+  </footer>
+</body>
+
+</html>
+
+<!-- Források: 
+https://hu.wikipedia.org/wiki/Balaton
+https://hungarytoday.hu/
+https://www.mme.hu/magyarorszag-madarai
+-->
