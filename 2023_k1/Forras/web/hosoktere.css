@@ -1,0 +1,151 @@
+html {
+    /* Alapértelmezett betű méret*/
+}
+
+@media (max-width: 1000px) {
+    nav {
+        /* flex-direction */
+    }
+
+    nav a {
+        border-right: none !important;
+    }
+}
+
+@media (min-width: 1001px) {
+    nav {
+        /* flex-direction */
+    }
+}
+
+body {
+
+}
+
+#teljes-tartalom {
+    padding: 2rem;
+}
+
+section,
+article {
+    overflow: visible;
+    height: fit-content;
+    display: table;
+    width: 100%;
+    padding: 0.3rem;
+}
+
+#header {
+    display: table;
+    position: relative;
+    left: 0;
+    width: 100%;
+    height: 250px;
+    background: url('images/hosok-tere-fejlec.png') center center no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+figure img {
+    height: 150px;
+}
+
+.bal {
+    float: left;
+	margin-right: 2em;
+}
+
+figure {
+    border: 1px #cccccc solid;
+    padding: 4px;
+    margin: 0 10px 10px 0;
+    width: fit-content;
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+#ht-1925 img {
+    height: auto;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    padding: 0.3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-right: 1px solid lightgray;
+}
+
+nav a:hover {
+    color: darkblue;
+    background-color: rgba(207, 207, 252, 0.5);
+}
+
+#szobrok img {
+    height: 110px;
+    padding: 5px;
+}
+
+#nyil-fel {
+    height: 50px;
+}
+
+#forras {
+    font-style: italic;
+    font-size: small;
+}
+
+#kiemeles {
+    min-height: 300px;
+    height: auto;
+}
+
+#kiemelt-kep {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+
+#kiemelt-kep img {
+    height: 300px;
+}
+
+#kiemelt-nev {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+#kiemelt-leiras {
+    text-align: center;
+    vertical-align: top;
+}
+
+#elejere {
+    z-index: 100;
+    padding: 0.3em;
+    font-weight: bold;
+    height: fit-content;
+    position: fixed;
+}
+
+h2 {
+    padding: 1rem;
+}
+
+p {
+   
+}
+
+.kepek {
+    
+}
